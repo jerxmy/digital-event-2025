@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 20px;
+}
+section {
+  height: 100vh;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.s1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tututu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tututu > h1 {
+  color: #000;
+  align-items: center;
+}
+
+.cardsx {
+  position: relative;
+  max-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.cardx {
+  --spacing: 4rem;
+  height: calc(100vh - var(--spacing) * 2.42);
+  top: 0;
+  position: relative;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 4;
+  /* box-sizing: border-box; */
+  margin-left: auto;
+  margin-right: auto;
+  scroll-snap-align: top;
+}
+
+.cardx:nth-child(2) {
+  height: calc(100vh - var(--spacing) * 1.65);
+  z-index: 3;
+}
+
+.cardx:nth-child(3) {
+  /* top: calc(var(--spacing) * 3); */
+  height: calc(100vh - var(--spacing) * 0.8);
+  z-index: 2;
+}
+.cardx:nth-child(4) {
+  /* top: calc(var(--spacing) * 3); */
+  height: calc(100vh - var(--spacing) * 0.04);
+  z-index: 1;
+}
