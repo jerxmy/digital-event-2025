@@ -3,33 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESD Digital Event</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Monoglyphic+60&display=swap"
-    />
+    <title>Formation Layout</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body class="bg-white">
+  <body>
     <!-- navbar -->
     <nav id="navbar">
-      <div>
-        <a>
-          <img
-            class="logo"
-            src="./assets/logo-digital-event.png"
-            alt="Logo Digital Event"
-          />
-        </a>
-      </div>
-      <div class="container-fluid">
-        <ul class="nav">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="#" class="logo-link">
+            <img
+              class="logo"
+              src="./assets/logo-digital-event.png"
+              alt="Logo Digital Event"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Digital Event 2025</a>
+            <a class="nav-link" href="#">Digital Event 2025</a>
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-white"
+              class="nav-link"
               href="https://ecole-du-digital.com/formations/schema-des-etudes/"
               target="_blank"
               >Nos formations</a
@@ -42,12 +38,14 @@
     <!-- presentation Digital Event 2025 -->
     <div class="container bg-black">
       <div class="row align-items-center">
-        <div class="col">
+        <div class="col" id="bobo">
           <h1 class="text-start text-white">Paris</h1>
           <p class="text-start text-white">
-            Hunger pangs? You’re at the right stop to drive it away! Order
-            delicious food or reserve a table at your next cafe from the comfort
-            of your home!
+            Le Digital Event est un événement de l’ESD d’une durée de 10 jours
+            pendant laquelle les étudiants imaginent et conçoivent des ateliers
+            autour d’un thème, cette année c’est "Les monde parallèles". Cet
+            événement se conclu par une soirée événement (la Diginight) durant
+            laquelle les élèves présentent leurs projets au public
           </p>
           <div class="align-items-start">
             <button type="button">Découvrir</button>
@@ -64,7 +62,7 @@
     </div>
 
     <!-- affichage précédents Digital Event (2024-2023-2022-2021) -->
-    <section id="section2" class="dFlexCenter h100 bg-black">
+    <!-- <section id="section2" class="dFlexCenter h100 bg-black">
       <div class="boxVinyl">
         <img
           id="vinyl-1"
@@ -91,16 +89,126 @@
           alt="Digital Event 2021"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- presentation ecole + formations ecoles -->
 
-    <!-- Section en display flex avec 2 div col 6 -->
-    <!-- Div 1 col 6 : 1 div col 12 avec 3 input col 3 avec un gap de 3 et 1 div col 12 contenant 3 image/lien en col 12    -->
-    <!-- Div 2 col 6 : 1 div col 12 contenant 1 grande image (col-12) et un input avec un background-image en col 12  -->
+    <div class="container">
+      <div class="content">
+        <!-- Left Column -->
+        <div class="col-6 left">
+          <div class="filter-bar">
+            <button class="filter active" data-filter="toutes">Toutes</button>
+            <button class="filter" data-filter="bachelor">Bachelor</button>
+            <button class="filter" data-filter="mastere">Mastère</button>
+          </div>
+          <div class="card">
+            <div class="Dflex">
+              <div>
+                <img src="./assets/cover-dev-esd.png" />
+              </div>
+              <div class="text-formation">
+                <div>
+                  <span>Bachelor</span>
+                  <h3>Developpeur Web</h3>
+                  <p>
+                    3 années dont une en alternance pour apprendre à créer des
+                    sites et des applications web..
+                  </p>
+                </div>
+                <div>
+                  <button class="play-btn">
+                    <a
+                      href="https://ecole-du-digital.com/formations/bachelor-chef-de-projet-digital/"
+                      target="_blank"
+                      >▶
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+          <div class="card">
+            <div class="Dflex">
+              <div>
+                <img src="./assets/cover-cpd-esd.png" />
+              </div>
+              <div class="text-formation">
+                <div>
+                  <span>Bachelor 1 & 2</span>
+                  <h3>Chef de Projet</h3>
+                  <p>
+                    Un cycle d'études en 2 ans, pour une formation
+                    polyvalente...
+                  </p>
+                </div>
+                <div>
+                  <button class="play-btn">
+                    <a
+                      href="https://ecole-du-digital.com/formations/bachelor-chef-de-projet-digital/"
+                      target="_blank"
+                      >▶
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="Dflex">
+              <div>
+                <img src="./assets/cover-ui-ux-esd.png" />
+              </div>
+              <div class="text-formation">
+                <div>
+                  <span>Mastère 1 & 2</span>
+                  <h3>UX-UI Design</h3>
+                  <p>
+                    Un cycle d'études en 2 ans, pour une formation
+                    polyvalente...
+                  </p>
+                </div>
+                <div>
+                  <button class="play-btn">
+                    <a
+                      href="https://ecole-du-digital.com/formations/bachelor-chef-de-projet-digital/"
+                      target="_blank"
+                      >▶
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://ecole-du-digital.com/formations/schema-des-etudes/"
+            target="_blank"
+            class="view-more"
+            >Voir plus</a
+          >
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-6 right">
+          <div class="large-card">
+            <img src="./assets/large-card-esd.png" />
+          </div>
+          <div class="footer">
+            <h4>Découvrir ESD</h4>
+            <p>Paris</p>
+            <div class="actions">
+              <button class="like">♥</button>
+              <a href="https://ecole-du-digital.com" target="_blank">
+                <button class="play">▶</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="filter.js"></script>
   </body>
 </html>

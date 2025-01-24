@@ -1,0 +1,293 @@
+/* Typo installées */
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../assets/typo/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --c-white: #ffffff;
+  --c-black: #191919;
+  --c-purple: #9f91c1;
+  --c-blue: #00ffe3;
+}
+
+body {
+  font-family: "Monoglyphic 60", sans-serif;
+  background-color: var(--c-black);
+  color: #333;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+#navbar {
+  background-color: var(--c-black);
+  padding: 1rem 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--c-white);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--c-blue);
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 10vh auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--c-purple);
+  padding: 20px;
+}
+
+/* Responsive Layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10vh;
+}
+
+.col-6 {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  margin-top: 10px;
+  margin: 20px;
+}
+
+.filter {
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.filter.active {
+  border: 1px solid #00ffe3;
+  color: #00ffe3;
+}
+
+.filter:hover {
+  border: 1px solid #00ffe3;
+  color: #00ffe3;
+}
+
+/* Left Column */
+.left {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 24px;
+  gap: 20px;
+  margin-bottom: 10vh;
+}
+
+.card {
+  background-color: #181434;
+  color: #fff;
+  padding: 15px;
+  margin: 0 20px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Dflex {
+  display: flex;
+  gap: 6%;
+}
+
+.text-formation {
+  width: 100%;
+}
+
+.card:hover {
+  background-color: #00ffe3;
+  color: #000000;
+}
+
+.card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #7c67b8;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card .play-btn {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card .play-btn:hover {
+  background-color: #7c67b8;
+  color: #fff;
+}
+
+.view-more {
+  color: #7c67b8;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin: 10px auto;
+  padding-left: 15px;
+}
+
+/* Right Column */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10vh;
+}
+
+.large-card {
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.large-card img {
+  width: 100%;
+  height: auto;
+}
+
+.large-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background-color: #181434;
+  color: #fff;
+  margin: 0 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.footer h4 {
+  font-size: 16px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .like,
+.footer .play {
+  background-color: #fff;
+  color: #7c67b8;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .like {
+  background-color: transparent;
+  color: #7c67b8;
+}
